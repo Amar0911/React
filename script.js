@@ -1,4 +1,9 @@
 
+
+
+
+
+
 // function a(){
     // const root = document.getElementById('root');
 //     const heading = React.createElement('h1', null, 'Hllo');
@@ -8,14 +13,17 @@
 
 
 
+
+
+
 /* */
 
-// const root = document.getElementById('root');
-// function Heading(){
-//     return <h1>Helllo</h1>
-// }
+const root = document.getElementById('root');
+function Heading(){
+    return <h1>Helllo</h1>
+}
 
-// ReactDOM.render(<Heading/>, root);
+ReactDOM.render(<Heading/>, root);
 
 /*  */
 
@@ -32,12 +40,6 @@
 
 // ReactDOM.render(<FruitsList />, root);
 
-
-const display = document.getElementById('display');
-function Nav(){
-    return <h1>Mumbai<h1/>
-}
-ReactDOM.render(<Nav/>, display);
 
 
 
@@ -92,5 +94,11 @@ ReactDOM.render(<Nav/>, display);
 
 // ReactDOM.render(<PlacesList />, root);
 
+
+const display = document.getElementById('display');
+function Nav(){
+    return <h1>Mumbai<h1/>
+}
+ReactDOM.render(<Nav/>, display);
 
 
