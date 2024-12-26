@@ -5,7 +5,7 @@
 
 
 // function a(){
-    // const root = document.getElementById('root');
+//     const root = document.getElementById('root');
 //     const heading = React.createElement('h1', null, 'Hllo');
 //     ReactDOM.render(heading,root)
 // }
@@ -16,14 +16,13 @@
 
 
 
-/* */
 
-const root = document.getElementById('root');
-function Heading(){
-    return <h1>Helllo</h1>
-}
+// const root = document.getElementById('root');
+// function Heading(){
+//     return <h1>Helllo</h1>
+// }
 
-ReactDOM.render(<Heading/>, root);
+// ReactDOM.render(Header(), root);
 
 /*  */
 
@@ -95,10 +94,13 @@ ReactDOM.render(<Heading/>, root);
 // ReactDOM.render(<PlacesList />, root);
 
 
-const display = document.getElementById('display');
-function Nav(){
-    return <h1>Mumbai<h1/>
-}
-ReactDOM.render(<Nav/>, display);
+class Greeting extends React.Component {
+    render() {
+        return (
+        <h1> He4llo </h1>
+    )
+    }
+}   
+ReactDOM.render(<Greeting/>, root)
 
 
