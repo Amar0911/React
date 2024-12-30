@@ -1,0 +1,14 @@
+[
+    {
+        "id":1, "city":"Mumbai", "temperature": 25, "weather": "cloudy"
+    },
+    {
+        "id":2, "city":"Delhi", "temperature": 25, "weather": "cloudy"
+    },
+    {
+        "id":3, "city":"Kolkata", "temperature": 30, "weather": ""
+    },
+    {
+        "id":4, "city":"Chennai", "temperature": 35, "weather": "Warm"
+    }
+]
