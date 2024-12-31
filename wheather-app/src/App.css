@@ -27,11 +27,6 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
   padding: 2em;
@@ -39,4 +34,96 @@
 
 .read-the-docs {
   color: #888;
+}
+
+
+/* css */
+
+.weather {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border-radius: 20px;
+  padding: 30px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 350px;
+  margin: 20px auto;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.weather::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 60%);
+  animation: spin 8s linear infinite;
+  z-index: 0;
+}
+
+.weather:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.weather h1 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1;
+}
+
+.weather p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.weather p:first-of-type {
+  font-weight: bold;
+}
+
+/* Add glowing border animation */
+.weather::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  padding: 3px;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a1c4fd, #c2e9fb, #ffecd2);
+  background-size: 400% 400%;
+  z-index: 0;
+  animation: glow 6s ease infinite;
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

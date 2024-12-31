@@ -38,6 +38,7 @@ function App() {
       return {
         city: data.name,
         temperature: data.main.temp,
+        weather: data.main.weather,
       };
 
     } catch (error) {
