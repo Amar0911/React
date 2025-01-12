@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './MovieCard.css'
 
 const IMG_PATH = 'https://image.tmdb.org/t/p/w500';
 
