@@ -68,3 +68,8 @@ const SearchedMoviePage = () => {
 };
 
 export default SearchedMoviePage
+
+
+/* 
+ Error Boundary: These are special components that catch users is any part of their
+*/

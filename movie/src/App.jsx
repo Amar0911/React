@@ -7,12 +7,14 @@ import HomePage from './pages/HomePage';
 import SearchedMoviePage from './pages/SearchedMoviePage';
 import TopRatedPage from './pages/TopRatedPage';
 import UpcomingPage from './pages/UpcomingPage';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 
  function App() {
   return <>
       <Router>
+        <ErrorBoundary>
         <Navbar/>
           <Routes>
             <Route path="/" element={<HomePage/>} />
@@ -21,6 +23,7 @@ import UpcomingPage from './pages/UpcomingPage';
             <Route path="/movie/:id" element={<MovieDetails/>} />
             <Route path="/search" element={<SearchedMoviePage/>} />
           </Routes>
+        </ErrorBoundary>
       </Router>
   </>
  }
