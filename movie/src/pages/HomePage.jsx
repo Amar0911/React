@@ -35,3 +35,31 @@ const HomePage = () => {
 };
 
 export default HomePage;
+
+
+/*
+
+Memoization : Memoization is an  optimization technique that helps to improve performance 
+by caching the results of expensive function calls and resuing the catched result 
+when the same inputs occur again
+
+
+Memoization ek aisa technique hai jo result ko ek jagah save karke, kaam ko help karne 
+mai improve karta hai, yani kabi bhi result chahiye rahega to waha se direct result se 
+le sakte hai, isse kaam karne mai easy hota hai.
+
+function Child({props}){
+  displaying props
+}
+
+function Parent(){
+  const [props, setProps] = useState(0);
+  setProps(10);
+  <child props=props/>
+}
+
+const = Child = React.memo( function Child({props}){
+  displaying props
+})
+
+*/

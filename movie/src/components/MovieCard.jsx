@@ -4,28 +4,32 @@ import './MovieCard.css'
 
 const IMG_PATH = 'https://image.tmdb.org/t/p/w500';
 
-const MovieCard = ({movie}) => {
+const MovieCard = React.memo(({movie}) => {
   return (
     <div>
       <Link to={`/movie/${movie.id}`} className="movie">
         <img src={`${IMG_PATH}/${movie.poster_path}`} alt={movie.title} />
-        <h3>{movie.title}</h3>
-        <p>Rating: {movie.vote_average}</p>
+        {/* <h3>{movie.title}</h3>
+        <p>Rating: {movie.vote_average}</p> */}
       </Link>
       <hr />
       <br />
     </div>
   )
-}
+})
 
 export default MovieCard
 
 
-/*
 
-Memoization: 
+/* 
+
+A component that determines whether to re-render itself based on state or props is Purecomponent.
 
 */
+
+
+
 
 
 
